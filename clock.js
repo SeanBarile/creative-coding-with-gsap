@@ -1,6 +1,5 @@
 export class Clock {
   constructor(selector) {
-    console.log('Selected element:', this.element);
     this.element = document.querySelector(selector);
     if (!this.element) {
       throw new Error(`Element with selector "${selector}" not found.`);
